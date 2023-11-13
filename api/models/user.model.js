@@ -16,6 +16,10 @@ const userSchema = new mongoose.Schema({
         required: true,
         minlength: 4,
     },
+    avatar: {
+        type: String,
+        default: "https://images.hdqwalls.com/wallpapers/demon-slayer-samurai-anime-girl-4k-kd.jpg",
+    },
 }, { timestamps: true });
 
 const User = mongoose.model('User', userSchema);
